@@ -1,0 +1,82 @@
+body{
+    background-color: white;
+}
+.cacl_container{
+    width: 250px;
+    height: 300px;
+    border: 1.5px solid black;
+}
+.cacl_container.light {
+    background-color: rgb(233, 233, 233);
+    color: black;
+}
+input{
+    width: 100%;
+    height: 65px;
+    border: none;
+    font-size: 20px;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+.cacl_container .calc_input {
+    text-align: right;
+    color: white;
+    background-color: rgb(82, 80, 80);
+}
+.cacl_container.light .calc_input {
+    color: black;
+    background-color: rgb(233, 233, 233);
+}
+.cacl_container .themeToggler i {
+    color: white;
+}
+.cacl_container.light .themeToggler i {
+    color: black;
+}
+.clear, .sign, .percent{
+    background-color: rgb(112, 112, 112);
+    color: white;
+}
+.clear.light, .sign.light, .percent.light{
+    background-color: rgb(173, 173, 173);
+    color: black;
+}
+.divide, .operator, .equals{
+    background-color: rgb(255, 128, 37);
+}
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.clr_toggle{
+    background-color: rgb(157, 157, 157);
+    color: white;
+}
+.clr_toggle.light{
+    background-color: rgb(238, 238, 238);
+    color: black;
+}
+button{
+    border: 0.5px solid black;
+    height: 47px;
+    cursor: pointer;
+    background-color: rgb(157, 157, 157);
+    color: white;
+    font-size: 20px;
+}
+button:hover, .clr_toggle:hover{
+    background-color: rgb(197, 197, 197);
+}
+#zero{
+    grid-column: span 2;
+}
+i{
+   font-size: 15px;
+   cursor: pointer;
+   color: white;
+}
+.themeToggler{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
