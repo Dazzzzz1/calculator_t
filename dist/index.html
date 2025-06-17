@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script defer src="./bundle.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="cacl_container">
+        <div class="themeToggler"><i class="fa-solid fa-sun"></i></div>
+        <input type="text" class="calc_input" readonly> 
+        <div class="buttons">
+            <button onclick="clearDisplay()" class="clear">AC</button>
+            <button onclick="changeSign()" class="sign">+/-</button>
+            <button onclick="getPercent()" class="percent">%</button>
+            <button onclick="appendOp('/')" class="divide">/</button>
+
+            <button class="clr_toggle" onclick="addNum('7')">7</button>
+            <button class="clr_toggle" onclick="addNum('8')">8</button>
+            <button class="clr_toggle" onclick="addNum('9')">9</button>
+            <button onclick="appendOp('*')" class="operator">×</button>
+
+            <button class="clr_toggle" onclick="addNum('4')">4</button>
+            <button class="clr_toggle" onclick="addNum('5')">5</button>
+            <button class="clr_toggle" onclick="addNum('6')">6</button>
+            <button onclick="appendOp('-')" class="operator">-</button>
+
+            <button class="clr_toggle" onclick="addNum('1')">1</button>
+            <button class="clr_toggle" onclick="addNum('2')">2</button>
+            <button class="clr_toggle" onclick="addNum('3')">3</button>
+            <button onclick="appendOp('+')" class="operator">+</button>
+
+            <button class="clr_toggle" onclick="addNum('0')" id="zero">0</button>
+            <button class="clr_toggle" onclick="separator()">,</button>
+            <button onclick="calculate()" class="equals">=</button>
+        </div>
+    </div>
+    
+</body>
+</html>
